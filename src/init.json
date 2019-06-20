@@ -1,0 +1,823 @@
+{
+  "version": 4,
+  "terraform_version": "0.12.1",
+  "serial": 29,
+  "lineage": "ff1e1e8e-a42c-e2b5-1f13-dbef48ff31e6",
+  "outputs": {
+    "artifacts_bucket_arn": {
+      "value": "arn:aws:s3:::pocket-cards-artifacts",
+      "type": "string"
+    },
+    "artifacts_bucket_name": {
+      "value": "pocket-cards-artifacts",
+      "type": "string"
+    },
+    "artifacts_bucket_regional_domain_name": {
+      "value": "pocket-cards-artifacts.s3.ap-northeast-1.amazonaws.com",
+      "type": "string"
+    },
+    "audios_bucket_arn": {
+      "value": "arn:aws:s3:::pocket-cards-mp3",
+      "type": "string"
+    },
+    "audios_bucket_name": {
+      "value": "pocket-cards-mp3",
+      "type": "string"
+    },
+    "audios_bucket_regional_domain_name": {
+      "value": "pocket-cards-mp3.s3.ap-northeast-1.amazonaws.com",
+      "type": "string"
+    },
+    "backend_branch": {
+      "value": "master",
+      "type": "string"
+    },
+    "backend_owner": {
+      "value": "wwalpha",
+      "type": "string"
+    },
+    "backend_repo": {
+      "value": "pocket-cards-backend",
+      "type": "string"
+    },
+    "devops_branch": {
+      "value": "master",
+      "type": "string"
+    },
+    "devops_owner": {
+      "value": "wwalpha",
+      "type": "string"
+    },
+    "devops_repo": {
+      "value": "pocket-cards-devops",
+      "type": "string"
+    },
+    "dynamodb_groups_arn": {
+      "value": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_Groups",
+      "type": "string"
+    },
+    "dynamodb_groups_name": {
+      "value": "PocketCards_Groups",
+      "type": "string"
+    },
+    "dynamodb_groups_stream_arn": {
+      "value": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_Groups/stream/2019-06-18T03:24:45.633",
+      "type": "string"
+    },
+    "dynamodb_history_arn": {
+      "value": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_History",
+      "type": "string"
+    },
+    "dynamodb_history_name": {
+      "value": "PocketCards_History",
+      "type": "string"
+    },
+    "dynamodb_history_stream_arn": {
+      "value": "",
+      "type": "string"
+    },
+
+    "dynamodb_user_groups_arn": {
+      "value": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_UserGroups",
+      "type": "string"
+    },
+    "dynamodb_user_groups_name": {
+      "value": "PocketCards_UserGroups",
+      "type": "string"
+    },
+    "dynamodb_user_groups_stream_arn": {
+      "value": "",
+      "type": "string"
+    },
+    "dynamodb_users_arn": {
+      "value": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_Users",
+      "type": "string"
+    },
+    "dynamodb_users_name": {
+      "value": "PocketCards_Users",
+      "type": "string"
+    },
+    "dynamodb_users_stream_arn": {
+      "value": "",
+      "type": "string"
+    },
+    "dynamodb_words_arn": {
+      "value": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_Words",
+      "type": "string"
+    },
+    "dynamodb_words_name": {
+      "value": "PocketCards_Words",
+      "type": "string"
+    },
+    "dynamodb_words_stream_arn": {
+      "value": "",
+      "type": "string"
+    },
+    "environment": {
+      "value": "dev",
+      "type": "string"
+    },
+    "frontend_branch": {
+      "value": "master",
+      "type": "string"
+    },
+    "frontend_owner": {
+      "value": "wwalpha",
+      "type": "string"
+    },
+    "frontend_repo": {
+      "value": "pocket-cards-frontend",
+      "type": "string"
+    },
+    "images_bucket_arn": {
+      "value": "arn:aws:s3:::pocket-cards-images",
+      "type": "string"
+    },
+    "images_bucket_name": {
+      "value": "pocket-cards-images",
+      "type": "string"
+    },
+    "images_bucket_regional_domain_name": {
+      "value": "pocket-cards-images.s3.ap-northeast-1.amazonaws.com",
+      "type": "string"
+    },
+    "ipa_url": {
+      "value": "https://m1rb1oo72l.execute-api.ap-northeast-1.amazonaws.com/v1",
+      "type": "string"
+    },
+    "logging_bucket_arn": {
+      "value": "arn:aws:s3:::pocket-cards-logging",
+      "type": "string"
+    },
+    "logging_bucket_name": {
+      "value": "pocket-cards-logging",
+      "type": "string"
+    },
+    "logging_bucket_regional_domain_name": {
+      "value": "pocket-cards-logging.s3.ap-northeast-1.amazonaws.com",
+      "type": "string"
+    },
+    "mtn_branch": {
+      "value": "master",
+      "type": "string"
+    },
+    "mtn_owner": {
+      "value": "wwalpha",
+      "type": "string"
+    },
+    "mtn_repo": {
+      "value": "pocket-cards-maintenance",
+      "type": "string"
+    },
+    "project_name": {
+      "value": "pocket-cards",
+      "type": "string"
+    },
+    "project_name_uc": {
+      "value": "PocketCards",
+      "type": "string"
+    },
+    "region": {
+      "value": "ap-northeast-1",
+      "type": "string"
+    },
+    "ssm_param_ipa_api_key": {
+      "value": "/pocket-cards/ipa_api_key",
+      "type": "string"
+    },
+    "ssm_param_slack_url": {
+      "value": "/pocket-cards/slack_url",
+      "type": "string"
+    },
+    "ssm_param_translation_api_key": {
+      "value": "/pocket-cards/translation_api_key",
+      "type": "string"
+    },
+    "translation_url": {
+      "value": "https://translation.googleapis.com/language/translate/v2",
+      "type": "string"
+    },
+    "web_bucket_arn": {
+      "value": "arn:aws:s3:::pocket-cards-web",
+      "type": "string"
+    },
+    "web_bucket_name": {
+      "value": "pocket-cards-web",
+      "type": "string"
+    },
+    "web_bucket_regional_domain_name": {
+      "value": "pocket-cards-web.s3.ap-northeast-1.amazonaws.com",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_dynamodb_table",
+      "name": "groups",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_Groups",
+            "attribute": [
+              {
+                "name": "id",
+                "type": "S"
+              },
+              {
+                "name": "nextTime",
+                "type": "S"
+              },
+              {
+                "name": "word",
+                "type": "S"
+              }
+            ],
+            "billing_mode": "PROVISIONED",
+            "global_secondary_index": [],
+            "hash_key": "id",
+            "id": "PocketCards_Groups",
+            "local_secondary_index": [
+              {
+                "name": "lsiIdx1",
+                "non_key_attributes": ["", "times"],
+                "projection_type": "INCLUDE",
+                "range_key": "nextTime"
+              }
+            ],
+            "name": "PocketCards_Groups",
+            "point_in_time_recovery": [
+              {
+                "enabled": false
+              }
+            ],
+            "range_key": "word",
+            "read_capacity": 3,
+            "server_side_encryption": [
+              {
+                "enabled": true
+              }
+            ],
+            "stream_arn": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_Groups/stream/2019-06-18T03:24:45.633",
+            "stream_enabled": true,
+            "stream_label": "2019-06-18T03:24:45.633",
+            "stream_view_type": "NEW_IMAGE",
+            "tags": null,
+            "timeouts": null,
+            "ttl": [
+              {
+                "attribute_name": "",
+                "enabled": false
+              }
+            ],
+            "write_capacity": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_dynamodb_table",
+      "name": "history",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_History",
+            "attribute": [
+              {
+                "name": "timestamp",
+                "type": "S"
+              },
+              {
+                "name": "userId",
+                "type": "S"
+              }
+            ],
+            "billing_mode": "PROVISIONED",
+            "global_secondary_index": [],
+            "hash_key": "userId",
+            "id": "PocketCards_History",
+            "local_secondary_index": [],
+            "name": "PocketCards_History",
+            "point_in_time_recovery": [
+              {
+                "enabled": false
+              }
+            ],
+            "range_key": "timestamp",
+            "read_capacity": 1,
+            "server_side_encryption": [],
+            "stream_arn": "",
+            "stream_enabled": false,
+            "stream_label": "",
+            "stream_view_type": "",
+            "tags": null,
+            "timeouts": null,
+            "ttl": [
+              {
+                "attribute_name": "",
+                "enabled": false
+              }
+            ],
+            "write_capacity": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_dynamodb_table",
+      "name": "user_groups",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_UserGroups",
+            "attribute": [
+              {
+                "name": "groupId",
+                "type": "S"
+              },
+              {
+                "name": "userId",
+                "type": "S"
+              }
+            ],
+            "billing_mode": "PROVISIONED",
+            "global_secondary_index": [
+              {
+                "hash_key": "groupId",
+                "name": "gsiIdx1",
+                "non_key_attributes": ["userId"],
+                "projection_type": "INCLUDE",
+                "range_key": "",
+                "read_capacity": 1,
+                "write_capacity": 1
+              }
+            ],
+            "hash_key": "userId",
+            "id": "PocketCards_UserGroups",
+            "local_secondary_index": [],
+            "name": "PocketCards_UserGroups",
+            "point_in_time_recovery": [
+              {
+                "enabled": false
+              }
+            ],
+            "range_key": "groupId",
+            "read_capacity": 1,
+            "server_side_encryption": [],
+            "stream_arn": "",
+            "stream_enabled": false,
+            "stream_label": "",
+            "stream_view_type": "",
+            "tags": null,
+            "timeouts": null,
+            "ttl": [
+              {
+                "attribute_name": "",
+                "enabled": false
+              }
+            ],
+            "write_capacity": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_dynamodb_table",
+      "name": "users",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_Users",
+            "attribute": [
+              {
+                "name": "id",
+                "type": "S"
+              }
+            ],
+            "billing_mode": "PROVISIONED",
+            "global_secondary_index": [],
+            "hash_key": "id",
+            "id": "PocketCards_Users",
+            "local_secondary_index": [],
+            "name": "PocketCards_Users",
+            "point_in_time_recovery": [
+              {
+                "enabled": false
+              }
+            ],
+            "range_key": null,
+            "read_capacity": 1,
+            "server_side_encryption": [],
+            "stream_arn": "",
+            "stream_enabled": false,
+            "stream_label": "",
+            "stream_view_type": "",
+            "tags": null,
+            "timeouts": null,
+            "ttl": [
+              {
+                "attribute_name": "",
+                "enabled": false
+              }
+            ],
+            "write_capacity": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_dynamodb_table",
+      "name": "words",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "arn": "arn:aws:dynamodb:ap-northeast-1:311178267809:table/PocketCards_Words",
+            "attribute": [
+              {
+                "name": "word",
+                "type": "S"
+              }
+            ],
+            "billing_mode": "PROVISIONED",
+            "global_secondary_index": [],
+            "hash_key": "word",
+            "id": "PocketCards_Words",
+            "local_secondary_index": [],
+            "name": "PocketCards_Words",
+            "point_in_time_recovery": [
+              {
+                "enabled": false
+              }
+            ],
+            "range_key": null,
+            "read_capacity": 3,
+            "server_side_encryption": [],
+            "stream_arn": "",
+            "stream_enabled": false,
+            "stream_label": "",
+            "stream_view_type": "",
+            "tags": null,
+            "timeouts": null,
+            "ttl": [
+              {
+                "attribute_name": "",
+                "enabled": false
+              }
+            ],
+            "write_capacity": 1
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "artifacts",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "acceleration_status": "",
+            "acl": "private",
+            "arn": "arn:aws:s3:::pocket-cards-artifacts",
+            "bucket": "pocket-cards-artifacts",
+            "bucket_domain_name": "pocket-cards-artifacts.s3.amazonaws.com",
+            "bucket_prefix": null,
+            "bucket_regional_domain_name": "pocket-cards-artifacts.s3.ap-northeast-1.amazonaws.com",
+            "cors_rule": [],
+            "force_destroy": false,
+            "hosted_zone_id": "Z2M4EHUR26P7ZW",
+            "id": "pocket-cards-artifacts",
+            "lifecycle_rule": [
+              {
+                "abort_incomplete_multipart_upload_days": 0,
+                "enabled": true,
+                "expiration": [
+                  {
+                    "date": "",
+                    "days": 30,
+                    "expired_object_delete_marker": false
+                  }
+                ],
+                "id": "tf-s3-lifecycle-20190609122249473600000001",
+                "noncurrent_version_expiration": [],
+                "noncurrent_version_transition": [],
+                "prefix": "",
+                "tags": null,
+                "transition": []
+              }
+            ],
+            "logging": [],
+            "object_lock_configuration": [],
+            "policy": null,
+            "region": "ap-northeast-1",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [],
+            "tags": null,
+            "versioning": [
+              {
+                "enabled": true,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "audios",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "acceleration_status": "",
+            "acl": "private",
+            "arn": "arn:aws:s3:::pocket-cards-mp3",
+            "bucket": "pocket-cards-mp3",
+            "bucket_domain_name": "pocket-cards-mp3.s3.amazonaws.com",
+            "bucket_prefix": null,
+            "bucket_regional_domain_name": "pocket-cards-mp3.s3.ap-northeast-1.amazonaws.com",
+            "cors_rule": [],
+            "force_destroy": false,
+            "hosted_zone_id": "Z2M4EHUR26P7ZW",
+            "id": "pocket-cards-mp3",
+            "lifecycle_rule": [],
+            "logging": [],
+            "object_lock_configuration": [],
+            "policy": null,
+            "region": "ap-northeast-1",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [],
+            "tags": null,
+            "versioning": [
+              {
+                "enabled": false,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "images",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "acceleration_status": "",
+            "acl": "private",
+            "arn": "arn:aws:s3:::pocket-cards-images",
+            "bucket": "pocket-cards-images",
+            "bucket_domain_name": "pocket-cards-images.s3.amazonaws.com",
+            "bucket_prefix": null,
+            "bucket_regional_domain_name": "pocket-cards-images.s3.ap-northeast-1.amazonaws.com",
+            "cors_rule": [],
+            "force_destroy": false,
+            "hosted_zone_id": "Z2M4EHUR26P7ZW",
+            "id": "pocket-cards-images",
+            "lifecycle_rule": [
+              {
+                "abort_incomplete_multipart_upload_days": 0,
+                "enabled": true,
+                "expiration": [
+                  {
+                    "date": "",
+                    "days": 7,
+                    "expired_object_delete_marker": false
+                  }
+                ],
+                "id": "tf-s3-lifecycle-20190606122234486800000001",
+                "noncurrent_version_expiration": [],
+                "noncurrent_version_transition": [],
+                "prefix": "",
+                "tags": null,
+                "transition": []
+              }
+            ],
+            "logging": [],
+            "object_lock_configuration": [],
+            "policy": null,
+            "region": "ap-northeast-1",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [],
+            "tags": null,
+            "versioning": [
+              {
+                "enabled": false,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "logging",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "acceleration_status": "",
+            "acl": "private",
+            "arn": "arn:aws:s3:::pocket-cards-logging",
+            "bucket": "pocket-cards-logging",
+            "bucket_domain_name": "pocket-cards-logging.s3.amazonaws.com",
+            "bucket_prefix": null,
+            "bucket_regional_domain_name": "pocket-cards-logging.s3.ap-northeast-1.amazonaws.com",
+            "cors_rule": [],
+            "force_destroy": false,
+            "hosted_zone_id": "Z2M4EHUR26P7ZW",
+            "id": "pocket-cards-logging",
+            "lifecycle_rule": [
+              {
+                "abort_incomplete_multipart_upload_days": 0,
+                "enabled": true,
+                "expiration": [
+                  {
+                    "date": "",
+                    "days": 30,
+                    "expired_object_delete_marker": false
+                  }
+                ],
+                "id": "tf-s3-lifecycle-20190618021329498900000001",
+                "noncurrent_version_expiration": [],
+                "noncurrent_version_transition": [],
+                "prefix": "",
+                "tags": null,
+                "transition": []
+              }
+            ],
+            "logging": [],
+            "object_lock_configuration": [],
+            "policy": null,
+            "region": "ap-northeast-1",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [],
+            "tags": null,
+            "versioning": [
+              {
+                "enabled": false,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "name": "web",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "acceleration_status": "",
+            "acl": "private",
+            "arn": "arn:aws:s3:::pocket-cards-web",
+            "bucket": "pocket-cards-web",
+            "bucket_domain_name": "pocket-cards-web.s3.amazonaws.com",
+            "bucket_prefix": null,
+            "bucket_regional_domain_name": "pocket-cards-web.s3.ap-northeast-1.amazonaws.com",
+            "cors_rule": [],
+            "force_destroy": false,
+            "hosted_zone_id": "Z2M4EHUR26P7ZW",
+            "id": "pocket-cards-web",
+            "lifecycle_rule": [],
+            "logging": [],
+            "object_lock_configuration": [],
+            "policy": null,
+            "region": "ap-northeast-1",
+            "replication_configuration": [],
+            "request_payer": "BucketOwner",
+            "server_side_encryption_configuration": [],
+            "tags": null,
+            "versioning": [
+              {
+                "enabled": false,
+                "mfa_delete": false
+              }
+            ],
+            "website": [],
+            "website_domain": null,
+            "website_endpoint": null
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_ssm_parameter",
+      "name": "ipa_api_key",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allowed_pattern": "",
+            "arn": "arn:aws:ssm:ap-northeast-1:311178267809:parameter/pocket-cards/ipa_api_key",
+            "description": "",
+            "id": "/pocket-cards/ipa_api_key",
+            "key_id": "",
+            "name": "/pocket-cards/ipa_api_key",
+            "overwrite": null,
+            "tags": null,
+            "tier": "Standard",
+            "type": "String",
+            "value": "FWbGwQrIIw3oqqIWy8O7W8lubvbAIpcG2Whor10b"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_ssm_parameter",
+      "name": "slack",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allowed_pattern": "",
+            "arn": "arn:aws:ssm:ap-northeast-1:311178267809:parameter/pocket-cards/slack_url",
+            "description": "",
+            "id": "/pocket-cards/slack_url",
+            "key_id": "",
+            "name": "/pocket-cards/slack_url",
+            "overwrite": null,
+            "tags": null,
+            "tier": "Standard",
+            "type": "String",
+            "value": "https://hooks.slack.com/services/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"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "aws_ssm_parameter",
+      "name": "translation_api_key",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "allowed_pattern": "",
+            "arn": "arn:aws:ssm:ap-northeast-1:311178267809:parameter/pocket-cards/translation_api_key",
+            "description": "",
+            "id": "/pocket-cards/translation_api_key",
+            "key_id": "",
+            "name": "/pocket-cards/translation_api_key",
+            "overwrite": null,
+            "tags": null,
+            "tier": "Standard",
+            "type": "String",
+            "value": "AIzaSyCJ8evxws7YIF0NEDmmHMO2pAbxDXwoAs8"
+          }
+        }
+      ]
+    }
+  ]
+}

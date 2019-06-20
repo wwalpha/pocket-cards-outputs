@@ -1,0 +1,23 @@
+{
+  "name": "t",
+  "version": "0.1.0",
+  "scripts": {
+    "prestart": "yarn build",
+    "start": "cdk deploy",
+    "prebuild": "rimraf build",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/lodash": "latest",
+    "@types/node": "latest",
+    "lodash": "latest",
+    "rimraf": "latest",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "@aws-cdk/cdk": "^0.35.0",
+    "@aws-cdk/cx-api": "^0.35.0"
+  }
+}
